@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fallback for colors in case Tailwind isn't processed */
+:root {
+  --bg: #0f1724;
+  --panel: #0b1220;
+  --muted: #94a3b8;
+  --text: #e6eef6;
+  --accent: #06b6d4;
+}
+
+html, body, #root { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+
+a { color: var(--accent); }
+button { background: transparent; color: inherit; border: none; }
+
